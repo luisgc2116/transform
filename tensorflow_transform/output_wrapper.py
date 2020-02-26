@@ -45,7 +45,7 @@ class TFTransformOutput(object):
     """Init method for TFTransformOutput.
 
     Args:
-      transform_output_dir: The directory containig tf.Transform output.
+      transform_output_dir: The directory containing tf.Transform output.
     """
     self._transform_output_dir = transform_output_dir
 
@@ -59,7 +59,7 @@ class TFTransformOutput(object):
     if self._transformed_metadata is None:
       self._transformed_metadata = metadata_io.read_metadata(
           os.path.join(self._transform_output_dir,
-                       self.TRANSFORMED_METADATA_DIR))
+                       TRANSFORMED_METADATA_DIR))
     return self._transformed_metadata
 
   @property
